@@ -51,7 +51,7 @@
 
         .hints {
             margin-top: 20px;
-            margin-left: 20px;
+            margin-left: 50px;
             text-align: left;
             display: none;
         }
@@ -67,8 +67,9 @@
             margin-right: auto;
         }
 
-        .down {
+        .position {
             margin-bottom: 40px;
+            margin-top: 30px;
             font-size: large;
         }
     </style>
@@ -101,18 +102,18 @@
 
     <div class="hints" id="hints">
         <h3><strong>Hints</strong></h3>
-        <p class="down"><strong>Right:</strong></p>
+        <p class="position"><strong>Right:</strong></p>
         <p>🇨🇳 + AI (8)</p>
         <p>def fun(x,y):
             if x>y;
             print(x+y)
             #error kind (6)</p>
         <p>I am a network, but I am not real, what am I? (6)</p>
-        <p>Down</p>
+        <p class="position"><strong>Down</strong></p>
         <p>Solve UP hints then you may get a hint (6)</p>
         <p>Synonym for 'orei' (5)</p>
         <p>What are Chatgpt, gemini (3)</p>
-        <p><strong>Up:</strong></p>
+        <p class="position"><strong>Up:</strong></p>
         <p>word+=4(5)</p>
         <p>(10+n+2√10n)×(√10-√n)/(√10+√n) + n</p>
     </div>
@@ -177,7 +178,7 @@
         const correctAnswers = [
             [null, null, null, null, null, null, "Q", null, null],
             [null, null, null, null, null, null, "M", null, null],
-            [null, null, null, null, null, "E", "I", null, null],
+            [null, null, null, null, null, "N", "I", null, null],
             ["D", "E", "E", "P", "S", "E", "E", "K", null],
             [null, null, "S", "Y", "N", "T", "A", "X", null],
             [null, null, null, "T", null, null, null, null, null],
@@ -253,7 +254,7 @@
                 document.getElementById('puzzle-section').style.display = 'none';
                 document.getElementById('equation-section').style.display = 'block';
             } else {
-                alert("Some answers are incorrect. They are highlighted in red. Please try again.");
+                alert("Some answers are incorrect. Please try again.");
             }
         }
 
